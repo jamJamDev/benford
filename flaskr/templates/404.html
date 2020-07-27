@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}404 - Not Found{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+    <p class="not-found-message">
+        Literally nothing to see here.
+        <br>
+        <a href="/" class="home-link">Home</a>
+    </p>
+{% endblock %}

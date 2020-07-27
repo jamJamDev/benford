@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Benford's Law{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+    <p>
+        You can read more about
+        <a href="https://en.wikipedia.org/wiki/Benford%27s_law#:~:text=Benford's%20law%2C%20also%20called%20the,life%20sets%20of%20numerical%20data.&text=If%20the%20digits%20were%20distributed,about%2011.1%25%20of%20the%20time.">Benford's Law on wikipedia</a>
+    </p>
+    <h2>Import File</h2>
+    {% if error_message %}
+        <p class="error-message">{{ error_message }}</p>
+    {% endif %}
+    <form action="result" method="POST" enctype="multipart/form-data">
+        <label for="datafile">Select File:</label>
+        <input type="file" name="file"><br>
+        <input type="submit" value="Submit">
+</form>
+{% endblock %}
