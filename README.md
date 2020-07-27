@@ -5,7 +5,15 @@ This is a small flask application that will consume a file of census data, asser
 A small [trello board](https://trello.com/b/bzN5qSoy/project) I made for this project (remaining items deal with docker)
 
 ## To run:
-My dockerfile is currently not working so you will have to run via flask (in the main directory):
+### Via Docker
+Build image first
+>sudo docker build -t benford.
+
+Run container
+>sudo docker run --publish 5000:5000 --name test
+Should be good to go!
+
+### Via Flask
 #### Linux/Mac
 >$ export FLASK_APP=flaskr
 >
@@ -26,3 +34,4 @@ My dockerfile is currently not working so you will have to run via flask (in the
 > $env:FLASK_ENV = "development"
 >
 > flask run
+Should be good to go!
