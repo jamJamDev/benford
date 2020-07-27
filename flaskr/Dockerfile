@@ -1,5 +1,9 @@
 FROM python:3.6.1-alpine
-WORKDIR /project
-ADD . /project
+WORKDIR /app
+ADD . /app
 RUN pip install -r requirements.txt
-CMD ["python","assistant.py"]
+EXPOSE 5000
+EXPOSE 5001
+ENV FLASK_ENV=development
+ENV FLASK_APP=flaskr
+CMD ["flask", "run"]
