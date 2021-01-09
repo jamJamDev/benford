@@ -2,7 +2,7 @@
 This is a small flask application that will consume a file of census data, assert Benford's law & display a bar graph with Chart.js. 
 
 ## Trello
-A small [trello board](https://trello.com/b/bzN5qSoy/project) I made for this project (remaining items deal with docker)
+A small [trello board]() I made for this project (remaining items deal with docker)
 
 ## To run:
 ### Via Docker
